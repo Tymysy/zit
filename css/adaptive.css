@@ -1,0 +1,160 @@
+@media (max-width: 1024px) {
+    .nav-bar {
+        padding: 20px 32px;
+    }
+
+    .model {
+        padding: 140px 32px 80px;
+    }
+
+    .model-showcase {
+        margin-top: 48px;
+    }
+
+    .model-specs {
+        gap: 24px;
+        margin-top: 64px;
+    }
+
+    .model-gallery {
+        margin-top: 64px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 100svh;
+    }
+
+    .nav-bar {
+        padding: 16px 20px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .theme-toggle {
+        width: 44px;
+        height: 44px;
+    }
+
+    .hero-bottom {
+        padding-bottom: 32px;
+    }
+
+    .explore-btn {
+        padding: 14px 32px;
+        font-size: 13px;
+    }
+
+    .model {
+        padding: 120px 20px 64px;
+    }
+
+    .gold-line {
+        margin: 24px 0;
+    }
+
+    .model-text {
+        font-size: 15px;
+    }
+
+    .model-showcase {
+        margin-top: 40px;
+    }
+
+    .carousel {
+        aspect-ratio: 4 / 3;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+
+    .carousel-btn.prev { left: 12px; }
+    .carousel-btn.next { right: 12px; }
+
+    .color-picker {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .color-name {
+        font-size: 24px;
+    }
+
+    .swatches {
+        gap: 18px;
+    }
+
+    .swatch {
+        width: 44px;
+        height: 44px;
+    }
+
+    .model-specs {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px 20px;
+        margin-top: 56px;
+        padding-top: 32px;
+    }
+
+    .model-gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        gap: 12px;
+        margin-top: 56px;
+    }
+
+    .model-gallery figure {
+        aspect-ratio: 1 / 1;
+    }
+
+    .model-gallery figure:first-child {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        aspect-ratio: 16 / 10;
+    }
+
+    .footer {
+        padding: 24px 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo {
+        font-size: 22px;
+    }
+
+    .model {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .swatches {
+        gap: 14px;
+    }
+}
+
+@media (hover: none) {
+    .model-gallery figure:hover img {
+        transform: none;
+    }
+
+    .swatch:hover {
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .carousel-track,
+    .swatch,
+    .swatch::after,
+    .model-gallery img {
+        transition: none;
+    }
+}

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Aston Martin</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
 </head>
 <body>
     <main>
@@ -13,6 +15,52 @@
                 <button class="theme-toggle" id="themeToggle">
                     <img class="theme-icon" id="themeIcon" src="./img/icons/moon.svg" alt="Theme">
                 </button>
+            </div>
+
+            <div class="model-intro">
+                <h1 class="model-title">Valiant</h1>
+                <div class="gold-line"></div>
+                <p class="model-text">Raw power, timeless elegance, and fearless performance.
+                     Crafted with precision for those who demand exclusivity, sophistication,
+                      and an unforgettable driving experience.</p>
+            </div>
+
+            <div class="model-showcase">
+                <div class="carousel" id="carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img src="./img/model/british_racing_green.jpg" alt="British Racing Green"></div>
+                        <div class="carousel-slide"><img src="./img/model/midnight_obsidian.jpg" alt="Midnight Obsidian"></div>
+                        <div class="carousel-slide"><img src="./img/model/glacier_blue.jpg" alt="Glacier Blue"></div>
+                        <div class="carousel-slide"><img src="./img/model/arctic_pearl.jpg" alt="Arctic Pearl"></div>
+                        <div class="carousel-slide"><img src="./img/model/solar_gold.jpg" alt="Solar Gold"></div>
+                    </div>
+                    <button class="carousel-btn prev" id="carouselPrev" aria-label="Previous color">&#8249;</button>
+                    <button class="carousel-btn next" id="carouselNext" aria-label="Next color">&#8250;</button>
+                </div>
+
+                <div class="color-picker">
+                    <p class="color-name" id="colorName" aria-live="polite"></p>
+                    <div class="swatches">
+                        <button class="swatch" data-name="British Racing Green" aria-label="British Racing Green" aria-pressed="true"><img src="./img/colors/circle_british_racing_green.jpg" alt=""></button>
+                        <button class="swatch" data-name="Midnight Obsidian" aria-label="Midnight Obsidian" aria-pressed="false"><img src="./img/colors/circle_midnight_obsidian.jpg" alt=""></button>
+                        <button class="swatch" data-name="Glacier Blue" aria-label="Glacier Blue" aria-pressed="false"><img src="./img/colors/circle_glacier_blue.jpg" alt=""></button>
+                        <button class="swatch" data-name="Arctic Pearl" aria-label="Arctic Pearl" aria-pressed="false"><img src="./img/colors/circle_arctic_pearl.jpg" alt=""></button>
+                        <button class="swatch" data-name="Solar Gold" aria-label="Solar Gold" aria-pressed="false"><img src="./img/colors/circle_solar_gold.jpg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="model-specs">
+                <div class="spec"><p class="spec-value">745 hp</p><p class="spec-label">Power</p></div>
+                <div class="spec"><p class="spec-value">3.3 s</p><p class="spec-label">0–100 km/h</p></div>
+                <div class="spec"><p class="spec-value">322 km/h</p><p class="spec-label">Top Speed</p></div>
+                <div class="spec"><p class="spec-value">V12</p><p class="spec-label">5.2L Twin-Turbo Engine</p></div>
+            </div>
+
+            <div class="model-gallery">
+                <figure><img src="./img/side_view.jpg" alt="Side View"></figure>
+                <figure><img src="./img/interior.jpg" alt="Interior"></figure>
+                <figure><img src="./img/top_view.jpg" alt="Top View"></figure>
             </div>
         </section>
     </main>
